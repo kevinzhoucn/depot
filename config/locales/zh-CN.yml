@@ -1,0 +1,73 @@
+#START:layout
+#START:main
+#START:cart
+#START:currency
+#START:checkout
+#START:flash
+zh-CN:
+
+#END:cart
+#END:checkout
+#END:flash
+#END:main
+#END:layout
+  number:
+    currency:
+      format:
+        unit:      "￥"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format:    "%u%n"
+#END:currency
+
+#START:errors
+  errors:
+    template:
+      body:        "以下项目有错误:"
+      header:       
+        one:       "1 处错误导致不能保存！"
+        other:     "%{count} 处错误导致不能保存！"
+#END:errors
+
+#START:layout
+  layouts:
+    application:
+      title:       "特产网"
+      home:        "首页"
+      questions:   "常见问题"
+      news:        "新闻"
+      contact:     "联系我们"
+#END:layout
+
+#START:cart
+  carts:
+    cart:
+      title:       "购物车"
+      empty:       "清空购物车"
+      checkout:    "去付款"
+#END:cart
+
+#START:main
+  store:
+    index:
+      title_html:  "产品列表"
+      add_html:    "加入购物车"
+#END:main
+
+#START:checkout
+  orders:
+    new:
+      legend:       "请输入订单详情："
+    form:
+      name:         "姓名"
+      address_html: "地址"
+      email:        "邮箱"
+      pay_type:     "付款方式"
+      pay_prompt_html: "选择"
+      submit:       "创建订单"
+#END:checkout
+
+#START:flash
+  thanks:          "非常感谢您下单！"
+#END:flash
